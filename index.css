@@ -73,6 +73,11 @@ h2 {
     margin-right: 10px;
 }
 
+.icon:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
 .likes-and-comments {
     padding: 15px 10px 0px;
     border-bottom: 1px solid #c6c6c6;
