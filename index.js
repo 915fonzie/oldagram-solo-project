@@ -28,3 +28,53 @@ const posts = [
     }
 ]
 
+const bodyEl = document.body
+
+
+for(let i = 0; i < posts.length; i++){
+    let postInfo = posts[i]
+    topSection(postInfo.avatar, postInfo.name, postInfo.location, bodyEl)
+    midSection(postInfo.post)
+    lowerSection(postInfo.username, postInfo.likes, postInfo.comment)
+
+}
+
+
+function topSection(avatar, name, location) {
+    const section = document.createElement("section")
+    section.innerHTML = `
+    <div class="container top-section">
+        <img class="avatar" src=${avatar}>
+        <h1 class="name">${name}</h1>
+        <h2 class="location">${location}</h2>
+    </div>
+    `
+    bodyEl.appendChild(section)
+}
+
+function midSection(postImg) {
+    const section = document.createElement("section")
+    section.innerHTML = `
+    <div class="container">
+        <img class="post-image" src=${postImg}>
+    </div>
+    `
+    bodyEl.appendChild(section)
+}
+
+function lowerSection(username, likes, comment){
+    const section = document.createElement("section")
+    section.innerHTML = `
+    <div class="container">
+        <div class="likes-and-comments">
+            <img class="icon" src="images/icon-heart.png">
+            <img class="icon" src="images/icon-comment.png">
+            <img class="icon" src="images/icon-dm.png">
+            <h1>${likes} likes</h1>
+            <p><span class="bold">${username}</span> ${comment}</p>
+        </div>
+    </div>
+    `
+    bodyEl.appendChild(section)
+}
+

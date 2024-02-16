@@ -1,5 +1,80 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-size: 13px;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
 }
 
+/* typography */
+
+h1 {
+    font-size: 13px;
+    font-weight: 700;
+    
+}
+
+h2 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+
+/* layout */
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.top-section {
+    border-top: 1px solid #c6c6c6;
+}
+
+.logo {
+    width: 127px;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    float: left;
+    padding: 10px 10px;
+}
+
+.name {
+    margin-bottom: 0;
+    padding-top: 4px;
+}
+
+.location {
+    margin-top: 0;
+}
+
+.post-image {
+    width: 100%;
+}
+
+.icon {
+    display: inline-block;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.likes-and-comments {
+    padding: 15px 10px 0px;
+    border-bottom: 1px solid #c6c6c6;
+    margin-bottom: 20px;
+}
